@@ -1,0 +1,27 @@
+body 
+{
+background-color: lightgray;    
+}
+#contact-form 
+{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 4%;
+}
+input 
+{
+    width: 250px;
+    height: auto;
+    padding: 8px;
+}
+
+table 
+{
+    background-color: white;
+}
+h1 
+{
+    color: white;
+    font-size: 40px;
+}
