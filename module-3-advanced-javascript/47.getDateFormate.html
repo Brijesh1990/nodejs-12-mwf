@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+ 
+</head>
+<body>
+
+
+     <center>
+    <p id="res"></p>    
+    <button type="button" id="btnAdd" onclick="display()">Get current Date</button>
+    </center>
+    <!-- <script>
+      var btnAdd=document.getElementById("btnAdd");
+      btnAdd.addEventListener("click",function(){
+        var d=new Date();
+        document.getElementById("res").innerHTML="The date formate is :"+d;
+      })  
+        
+    </script> -->
+
+<!-- 
+    <script>
+        var btnAdd=document.getElementById("btnAdd");
+        btnAdd.addEventListener("click",display);
+        function display()
+        {
+          var d=new Date();
+          document.getElementById("res").innerHTML="The date formate is :"+d;
+        }  
+          
+      </script> -->
+
+     
+      <script>
+        var btnAdd=document.getElementById("btnAdd");
+
+    //     btnAdd.addEventListener("click",display);
+        
+    //    function display()
+    //     {
+    //       var d=new Date();
+    //       document.getElementById("res").innerHTML="The date formate is :"+d;
+    //     }  
+
+
+
+    btnAdd.addEventListener("click",()=>{
+        var d=new Date();
+           document.getElementById("res").innerHTML="The date formate is :"+d;
+        
+    });
+        
+          
+          
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;
+background-color: aliceblue;    
+}
+input 
+{
+text-align: right;
+font-size: 25px !important;   
+padding: 5px;
+border: none !important; 
+}
+#btn-show
+{
+width: 24.5%;
+height: auto;
+padding: 18px 0px !important;    
+}
+
+#btn-show1
+{
+width: 24.5%;
+height: auto;
+padding: 18px 0px !important;    
+background-color: blue;
+color: white;
+}
+
+@media only screen and (max-width:580px)
+{
+
+#btn-show
+{
+width: 22% !important;
+height: auto !important;
+padding: 18px 0px !important;    
+}
+#btn-show1
+{
+width: 22% !important;
+height: auto !important;
+padding: 18px 0px !important;    
+background-color: blue;
+color: white;
+}
+
+}

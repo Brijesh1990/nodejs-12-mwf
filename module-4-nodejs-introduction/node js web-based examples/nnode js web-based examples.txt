@@ -1,0 +1,63 @@
+what is node js web-based examples ?
+
+   A node js web application containes the following parts ..........
+
+   1) import require module
+
+      var http=require("http")
+
+   2) create a server
+
+      http.createServer(function(request,response){
+
+      })
+
+   3) Read request and return response
+
+       response.writeHead(200,{'Content-Type':'text/plain'});
+       
+       response.end('Hello world');
+
+
+    How to create a server in Node js run examples on web-broswers....
+
+
+// var http=require("http");
+// http.createServer(function(request,response){
+//     response.writeHead(200,{'Content-Type':'text/plain'});
+//     response.end('Hello World');
+// }).listen(8081);
+
+// // print messages 
+// console.log('Server is running at http://localhost:8081');
+
+
+
+// var http=require("http");
+// http.createServer(function(request,response){
+//     response.writeHead(200,{'Content-Type':'text/plain'});
+//     response.end('Hello World');
+// }).listen(80);
+
+// // print messages 
+// console.log('Server is running at http://localhost:80');
+
+
+// var http=require("http");
+// http.createServer(function(request,response){
+//     response.writeHead(200,{'Content-Type':'text/plain'});
+//     response.end('Hello World');
+// }).listen(8000);
+
+// // print messages 
+// console.log('Server is running at http://localhost:8000');
+
+
+var http=require("http");
+http.createServer(function(request,response){
+    response.writeHead(200,{'Content-Type':'text/plain'});
+    response.end('Hello Prateek');
+}).listen(8000);
+
+// print messages 
+console.log('Server is running at http://localhost:8000');   

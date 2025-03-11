@@ -1,0 +1,23 @@
+body 
+{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;  
+}
+#loader-app
+{
+ width: 350px;
+ height: 350px;
+ background: url('../images/loader.gif') no-repeat;
+ background-size: 350px 350px;
+ background-position: center;
+ position: absolute;
+ left: 35%;
+ top: 10%;
+}
+
+#main-app
+{
+display: none;
+}

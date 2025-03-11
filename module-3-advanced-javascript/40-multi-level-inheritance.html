@@ -1,0 +1,35 @@
+<script>
+class Car 
+{
+    constructor(nm,model,year)
+    {
+        this.nm=nm;
+        this.model=model;
+        this.year=year;
+    }
+}
+class Showroom extends Car
+
+{
+   constructor(nm,model,year,showroomdetails)
+   {
+    super(nm,model,year);
+    this.showroomdetails=showroomdetails;
+   }
+
+}
+
+class Garage extends Showroom 
+{
+    constructor(nm,model,year,showroomdetails,garage)
+   {
+    super(nm,model,year,showroomdetails);
+    this.garage=garage;
+   }
+ 
+}
+
+var obj=new Garage("Maruti alto 800","alto lxi",2025,"Kataria automobiles pvt ltd kalawad road Rajkot","near speedwell party plot behind modi schools");
+console.log(obj);
+
+</script>

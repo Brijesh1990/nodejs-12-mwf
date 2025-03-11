@@ -1,0 +1,33 @@
+  what is node js  ?
+   1) Node js is a cross-platform run time environment and library for running javascript application.
+
+   2) It is a server-side run time environment of javascript.
+
+   3) it is used to creating server-side and networking web applications.
+
+   4) it is open source server side library of javascript 
+
+   5) it is used to free download and used https://nodejs.org/en/download
+
+   6) it is the basic module of node js are written in javascript it is mostly used to run real-time server side create application.
+
+   7) node js is a plateform built on chrome javascript runtime for easily build fast server side applications.
+
+   8) Node js also provide a rich library  of various javascript modules to simplify the develpoment of web applications.
+
+   Define Node js 
+
+    node js =>Runtime environment + javascript Library 
+
+    Features of Node js ......
+
+    1) Extreamly fast load content on server
+    2) I/O asynchrounous and events driven
+    3) single threaded
+    4) highly scalable
+    5) It is a open source (free to used)
+    6) It is server side scripting environment
+    7) It is support cross-plateform (support all OS)
+    8) It relased under MIT licence
+
+

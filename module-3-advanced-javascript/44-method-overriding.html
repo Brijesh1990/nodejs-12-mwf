@@ -1,0 +1,26 @@
+<script>
+    //method overriding : method overriding is used to create same function pass with same arguments there we used method overriding types of polymorphism
+    
+    class A 
+    {
+        constructor(nm,age,address)
+        {
+         this.nm=nm;
+         this.age=age;
+         this.address=address;
+        }
+    }
+    
+    
+    class B extends A 
+    {
+        constructor(nm,age,address)
+        {
+         super(nm,age,address)   
+        }
+    }
+    
+    var obj=new B("brijesh",35,"150 fet ring road rajkot");
+    console.log(obj);
+    
+    </script>

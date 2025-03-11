@@ -1,0 +1,32 @@
+{
+    "employee":[
+        {
+            "id":1,
+            "name":"brijesh",
+            "age":35,
+            "salary":89500,
+            "department":"IT",
+            "address":"150 feet ring road Rajkot"
+
+        },
+        {
+            "id":2,
+            "name":"vivek",
+            "age":35,
+            "salary":79500,
+            "department":"IT",
+            "address":"150 feet ring road Rajkot"
+
+        },
+
+        {
+            "id":3,
+            "name":"namrata",
+            "age":35,
+            "salary":19500,
+            "department":"CSE",
+            "address":"150 feet ring road Rajkot"
+
+        }
+    ]
+}

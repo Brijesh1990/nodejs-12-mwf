@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        div 
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            margin-top: 5%;
+        }
+        div button 
+        {
+            width: 90%;
+            height: auto;
+            margin: auto;
+            background-color: red;
+            padding: 15px;
+            margin-top: 1%;
+            border: none;
+            color: white;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<div>    
+<button type="button" onclick="add()">Additions</button>
+<button type="button"  ondblclick="subs()">Substractions</button>
+<button type="button" onmouseover="mult()">Multiplications</button>    
+</div>
+
+<script>
+function add()
+{
+  var a=parseInt(prompt('Enter a values :'));
+  var b=parseInt(prompt('Enter b values :'));
+  var c=a+b;
+  alert('Additions of values is :'+c);  
+}  
+function subs()
+{
+  var a=parseInt(prompt('Enter a values :'));
+  var b=parseInt(prompt('Enter b values :'));
+  var c=a-b;
+  alert('Substractions of values is :'+c);  
+}  
+function mult()
+{
+  var a=parseInt(prompt('Enter a values :'));
+  var b=parseInt(prompt('Enter b values :'));
+  var c=a*b;
+  alert('Multiplications of values is :'+c);  
+}    
+</script>
+</body>
+</html>

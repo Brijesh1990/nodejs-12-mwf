@@ -1,0 +1,78 @@
+body 
+{
+background-color: coral;
+margin: 0;
+padding: 0;
+overflow-x: hidden;    
+}
+.container 
+{
+ width: 40%;
+ height: auto;
+ margin: auto;
+ box-shadow: 2px 2px 2px 2px;
+ background-color: white;
+ padding: 15px 5px;   
+ line-height: 1px;
+ margin-top: 8%;
+}
+
+.container h1 
+{
+font-size: 36px;
+text-align: center;
+}
+.container hr 
+{
+    width: 30%;
+    height: auto;
+    border: solid 2px;
+}
+.container input 
+{
+width: 70%;
+height: auto;
+margin: auto;
+padding: 7px;
+margin-left: 5%;
+}
+.container button[type="button"]
+{
+ width: 20%;
+ height: auto;
+ background-color: black;
+ color: white;
+ padding: 9px;
+ border: none;   
+}
+
+li 
+{
+background-color: #f9f9f9;
+margin:0px;
+padding: 0px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-radius: 4px;    
+width: 100%;
+height: auto;
+overflow: auto !important;
+margin-left: 0%;
+}
+li button 
+{
+width: auto;
+height: auto;
+border: 0;
+background-color: red;
+color: white;
+padding: 8px;
+border-radius: 5px;    
+margin: 0px 5px !important;
+}
+
+#taskList li 
+{
+margin: 10px 0px !important;    
+}

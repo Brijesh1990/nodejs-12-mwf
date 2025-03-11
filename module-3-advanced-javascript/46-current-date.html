@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+
+     <center>
+    <p id="res"></p>    
+    <button type="button" onclick="display()">Get current Date</button>
+    </center>
+    <script>
+        function display()
+        {
+         var dd=new Date(); //new Date is instance of date  
+         // getDate
+        //  var result=dd.getDate();
+        //  document.getElementById("res").innerHTML="The date formate is :"+result; 
+
+        // var result=dd.getTimezoneOffset();
+        //  document.getElementById("res").innerHTML="The date formate is :"+result;
+        
+        //  document.getElementById("res").innerHTML="The date formate is :"+dd;
+        // var result=dd.getTime();
+        // document.getElementById("res").innerHTML="The date formate is :"+result;
+
+        var result=dd.getFullYear();
+        document.getElementById("res").innerHTML="The date formate is :"+result;
+
+        }
+    </script>
+</body>
+</html>

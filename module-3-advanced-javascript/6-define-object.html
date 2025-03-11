@@ -1,0 +1,28 @@
+<script>
+// There are 3 way to defined any object 
+
+// a) object as litrals
+// var employee={id:1, name:"brijesh",age:35};
+// // console.log(employee);
+// // console.log(employee.name);
+// console.log(employee.id + "\n" + employee.name + "\n" + employee.age);
+
+
+// b) object as instance
+//  var employee=new Object({id:1, name:"brijesh",age:35});
+//  console.log(employee);
+
+// b) object as constructor
+function display(id,name,age,salary)
+{
+   this.id=id,
+   this.name=name;
+   this.age=age,
+   this.salary=salary
+}
+var employee=new display(1,"ruturaj",25,89500);
+// console.log(employee);
+console.log(employee.id + "\n" + employee.name + "\n" + employee.age + "\n" + employee.salary);
+console.log(typeof(employee));
+
+</script>

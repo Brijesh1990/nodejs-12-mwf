@@ -1,0 +1,27 @@
+{
+"employee":[
+
+{
+"id":1,
+"name":"brijesh",
+"age":35,
+"salary":89500,
+"department":"Information technology",
+"education":"Mtech"  
+},
+
+
+{
+"id":2,
+"name":"rajesh",
+"age":35,
+"salary":89500,
+"department":"Information technology",
+"education":"Btech"  
+}
+
+
+]
+
+}
+

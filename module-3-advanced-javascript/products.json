@@ -1,0 +1,23 @@
+{
+    "products":[
+        {
+            "id":1,
+            "name":"samsung galaxy",
+            "photo":"https://images.samsung.com/in/smartphones/galaxy-s25/buy/product_color_navy_plus_PC.png?imbypass=true",
+            "price":55000,
+            "qty":1,
+            "descriptions":"good phone"
+
+        },
+        {
+            "id":2,
+            "name":"samsung fold6",
+            "photo":"https://images.samsung.com/in/smartphones/galaxy-s25/buy/product_color_navy_plus_PC.png?imbypass=true",
+            "price":155000,
+            "qty":1,
+            "descriptions":"good phone"
+
+        }
+
+    ]
+}

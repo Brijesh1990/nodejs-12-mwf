@@ -1,0 +1,11 @@
+what is NPM  ?
+ NPM stands for node package manager
+ NPM is a dependency manager that can be used to install any libraries or packages in  node js. 
+ NPM it is a built in while we install node js 
+  cmd ... npm -v
+  10.9.0
+
+ Note : npm install 
+        npm install mysql2
+        npm install express 
+              

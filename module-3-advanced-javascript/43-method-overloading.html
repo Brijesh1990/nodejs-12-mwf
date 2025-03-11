@@ -1,0 +1,28 @@
+<script>
+//method overloading : method overloading is used to create same function pass with different arguments there we used method overloading types of polymorphism
+
+class A 
+{
+    constructor(nm,age,address)
+    {
+     this.nm=nm;
+     this.age=age;
+     this.address=address;
+    }
+}
+
+
+class B extends A 
+{
+    constructor(nm,age,address,hr,company)
+    {
+     super(nm,age,address)   
+     this.hr=hr;
+     this.company=company;
+    }
+}
+
+var obj=new B("brijesh",35,"Mrs Hetal patel","Tops technology pvt ltd");
+console.log(obj);
+
+</script>

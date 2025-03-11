@@ -1,0 +1,25 @@
+<script>
+//abstraction is used for data hidding proceedures 
+// when we create an abstract of any class then we can not create an object object of class
+abstract class A 
+{
+    constructor(nm)
+    {
+        this.nm=nm;
+    }
+}
+class B extends A 
+{
+     constructor(age)
+     {
+
+        super(nm);
+        this.age=age;
+
+     }
+
+}
+var obj=new B("Brijesh kumar pandey",35);
+console.log(obj);
+
+</script>
