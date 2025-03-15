@@ -1,0 +1,7 @@
+  what is node module  ?
+   node js module is one type of a javascript libraries 
+   node js module is a set of function that is used to include in your application
+
+   How can we include module ...
+
+      var htt=require('http')  
