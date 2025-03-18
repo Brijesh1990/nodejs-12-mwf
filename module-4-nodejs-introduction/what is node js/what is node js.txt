@@ -28,7 +28,7 @@
     5) It is a open source (free to used)
     6) It is server side scripting environment
     7) It is support cross-plateform (support all OS)
-    8) It relased under MIT licence
+    8) It relased under MIT licence (add by chrome)
 
 
     How to install node js and run in console.....
@@ -41,6 +41,23 @@
     step 4:create a first application node js 
            index.js 
     step 5: run on console.log 
-            node index.js           
+            node index.js        
+
+
+    How to create a node js server for req | res on web broswers 
+
+    
+    var http=require("http");
+    http.createServer(function(request,response){
+    response.writeHead(200,{'Content-Type':'text/plain'});
+    response.end('Hello Prateek');
+    }).listen(8000);
+
+    // print messages 
+    
+    console.log('Server is running at http://localhost:8000'); 
+
+          
+    
 
 
