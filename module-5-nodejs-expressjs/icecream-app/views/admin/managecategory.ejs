@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- head load  -->
+<%- include('../partials/admin/head.ejs') %>
+</head>    
+<body class="sb-nav-fixed">
+<!-- navbar here -->
+<%- include('../partials/admin/navbar') %>
+<!-- banner section start here -->    
+<%- include('../partials/admin/sidebar') %>
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
+            <h1 class="mt-4">Manage Category</h1>
+           
+            <div class="row">
+                <div class="col-xl-10 col-md-10">
+                    <div class="card  text-dark mb-4 p-5 mt-4">
+                        <div class="card-body">Manage Category</div>
+                        <!-- manage category Data -->
+
+                        <table class="table table-responsive p-4">
+                            <tr  class="text-center">
+                                <th>#id</th>
+                                <th>Name</th>
+                                <th>Descriptions</th>
+                                <th>Action</th>
+                            </tr>
+
+                            <tr class="text-center">
+                                <td>1</td>
+                                <td>Cone Icecream</td>
+                                <td>good</td>
+                                <td><a href="#" class="btn btn-danger text-white">Delete <span class="fa fa-trash"></span></a> | <a href="#" class="btn btn-primary text-white">Edit <span class="fa fa-pencil"></span></a></td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
+               
+            
+        </div>
+    </main>
+
+<!-- admin Footer section start here -->    
+<%- include('../partials/admin/footer') %>
