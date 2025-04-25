@@ -16,7 +16,8 @@ app.use(bodyParser.urlencoded({
 
 // used session 
 app.use(session({
-    secret:false, 
+    secret:'secret', //pass secret key
+    resave:false,
     saveUninitialized:true
 }))
 
@@ -60,6 +61,42 @@ db.connect((err)=>{
    });
 
 // create a ejs template engine for setting routing 
+app.get('/',function(req,res){
+    res.render('index',{
+        message:req.flash('message')
+    });
+    // res.render('index');
+});
+// create a task routing
+app.get('/create-task',function(req,res){
+    res.render('create',{
+        message:req.flash('message')
+    });
+    // res.render('index');
+});
+
+// create a task for set routing
+app.post('/create-task',function(req,res){
+    // stored all data in a variables 
+    const{taskname,assignto,assigndate,status}=req.body;
+    // write a insert query to stored data in database
+    const query='insert into tasks(taskname,assignto,assigndate,status) values(?,?,?,?)';
+    db.query(query,[taskname,assignto,assigndate,status],(err,result)=>{
+        if(err){
+            req.flash('message','Errors occured while data add');
+            return res.redirect('/create-task');
+        }
+        else 
+        {
+         req.flash('message','Task successfully Added');
+         res.redirect('/');          
+        }
+
+    });
+
+   
+});
+
 
 // create app
 

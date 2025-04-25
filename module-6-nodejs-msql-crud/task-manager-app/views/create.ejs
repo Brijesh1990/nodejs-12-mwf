@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Crud operation about Task Manager App</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<%- include('partials/head.ejs') %>
+</head>
+<body>
+<!-- load all partials file here -->
+<%- include('partials/header.ejs') %>
+<%- include('partials/navbar.ejs') %>
+
+<div class="w-50 mx-auto p-5 bg-white">
+    <h1>Create Task Here </h1>
+    <hr />
+    <form method="post">
+    <div class="form-group mt-2">
+        <input type="text" name="taskname" placeholder="Add Task Name *" class="form-control" />
+    </div>
+    
+    <div class="form-group mt-2">
+        <select name="assignto" placeholder="Assign To *" class="form-control">
+            <option value="Brijesh Pandey">Brijesh Pandey</option>
+            <option value="Prateek">Prateek</option>
+        </select>
+    </div>
+
+    <div class="form-group mt-2">
+        <input type="date" name="assigndate" placeholder="Add Task assign Date *" class="form-control" />
+    </div>
+
+    <div class="form-group mt-2">
+        <input type="text" name="status" placeholder="Enter Status *" class="form-control" />
+    </div>
+
+    <div class="form-group mt-2">
+        <input type="submit" name="addtask" value="Add Task" class="btn btn-sm btn-dark text-white" />
+    </div>
+    
+    </form>
+     </div>
