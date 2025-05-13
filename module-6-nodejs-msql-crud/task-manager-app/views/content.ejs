@@ -2,14 +2,17 @@
 <h1>Manage All Task <a href="/create-task"><button type="button" class="btn btn-sm btn-dark text-white float-end">Add Task</button></a></h1>
 <hr />
 <!-- pass a flash messages  -->
-<% if(message) { %>
+<% if(message && message.length > 0) { %>
 <div class="alert alert-success">
     <span class="text-dark fs-5"><%= message %> </span>
 </div>    
 <% } %>    
-    
+        
 <table class="table table-resposnive mt-3 w-100">
     <tr>
+        <td colspan="2" align="right"><button type="button" class="btn btn-sm w-100 btn-danger text-white float-end">Totals Task  <%= tasks.length %> </button></td>
+    </tr>
+    <tr> 
         <th>#id</th>
         <th>TaskName</th>
         <th>assignTo</th>
@@ -17,6 +20,19 @@
         <th>status</th>
         <th>Action</th>
     </tr>
+   <% tasks.forEach(task => { %>
+    <tr>
+        <td><%= task.taskid %></td>
+        <td><%= task.taskname %></td>
+        <td><%= task.assignto %></td>
+        <td><%= task.assigndate %></td>
+        <td><%= task.status %></td>
+        <td><div style="min-width:100px"><a href="/edit/<%=task.taskid %>" class="btn btn-sm btn-primary text-white"><span class="bi bi-pencil"></span></a>
+        |    
+        <a href="/delete/<%=task.taskid %>" class="btn btn-sm btn-danger text-white" onclick="return confirm('Are you sure to delete data ?')"><span class="bi bi-trash"></span></a></div></td>
+    </tr>
+
+    <% }); %>
 
 </table>
 </div>

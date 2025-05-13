@@ -61,11 +61,13 @@ db.connect((err)=>{
    });
 
 // create a ejs template engine for setting routing 
-app.get('/',function(req,res){
-    res.render('index',{
-        message:req.flash('message')
-    });
-    // res.render('index');
+// show app data
+app.get("/",(req,res) => {
+    db.query('select * from tasks',(err,result)=>{
+        if(err) throw err;
+        res.render('index',{tasks:result,message:req.flash('message')});
+           
+    });  
 });
 // create a task routing
 app.get('/create-task',function(req,res){
@@ -97,17 +99,58 @@ app.post('/create-task',function(req,res){
    
 });
 
-
-// create app
-
-// show app data
-
 // edit app data
-
+app.get('/edit/:id',(req,res)=>{
+    // stored id in a variables
+    const id=req.params.id;
+    // write a select query to get data from database
+    const query='select * from tasks where taskid=?';
+    db.query(query,[id],(err,result)=>{
+        if(err) throw err;
+        res.render('edit',{task:result[0],message:req.flash('message')});
+           
+    });  
+});
 // update app data
+app.post('/edit/:id',(req,res)=>{
+    // stored all data in a variables
+    const{taskname,assignto,assigndate,status}=req.body;
+    // stored id in a variables
+    const id=req.params.id;
+    // write a update query to update data in database
+    const query='update tasks set taskname=?, assignto=?, assigndate=?, status=? where taskid=?';
+    db.query(query,[taskname,assignto,assigndate,status,id],(err,result)=>{
+        if(err){
+            req.flash('message','Errors occured while data update');
+            return res.redirect('/');
+        }
+        else 
+        {
+         req.flash('message','Task successfully updated');
+         res.redirect('/');          
+        }
 
+        });
+    });
 // delete app data
+app.get('/delete/:id',(req,res)=>{
+    // stored id in a variables
+    const id=req.params.id;
+    // write a delete query to delete data from database
+    const query='delete from tasks where taskid=?';
+    db.query(query,[id],(err,result)=>{
+        if(err){
+            req.flash('message','Errors occured while data delete');
+            return res.redirect('/');
+        }
+        else 
+        {
+         req.flash('message','Task successfully deleted');
+         res.redirect('/');          
+        }
 
+    });
+})
 
 // create a server on port 
 app.listen(port,()=>{
