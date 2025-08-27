@@ -1,0 +1,63 @@
+what is REST API ...
+what is REST ? 
+  REST stands for representational state transfer api 
+  REST is used to create CRUD operations via api 
+  REST api data status checked by postman
+
+  REST api provides some methods to send data | request data | delete data | update dat on server 
+
+  POST : create a new user
+
+  GET : fetch all details of users or fetch data of particulars id
+
+  PUT : updates a users details by its id
+
+  DELETE : delete a users detail by its id
+
+what is api ? 
+
+  api stands for application programming interface
+  api checked or load data in .json formate
+
+what is json ?
+  
+  json stands for javascript object notation 
+
+  examples : data.json
+
+   {
+    users :[
+        {
+            "id":1001,
+            "name":"prateek",
+            "age":24,
+            "salary":18500,
+            "department":"IT",
+            "address":"150 feet ring road rajkot"
+        }
+    ]
+   }
+
+
+
+Note : when we create REST api in node js then we used to check an status of our api using postman tools to check our status of api ...  
+
+postman is a tools that is check a status of api 
+This is a tools to interacts with any api by sending request by users
+
+status of API ......
+
+1) 200 OK : indicates that the request has succeeded 
+
+2) 201 : created indicates that the request has succeeded and new resource has been created a result.
+
+
+3) 304 : not modified indicates the client that the response has not been modified so the client can continue to use the same cached version of response.
+
+4) 400 : bad request the server could not understand the request due to incorrect syntax.
+
+5) 403 forbidden: unathorised request send by users 
+
+6) 404 not found the server can not find the request resource
+
+ 
