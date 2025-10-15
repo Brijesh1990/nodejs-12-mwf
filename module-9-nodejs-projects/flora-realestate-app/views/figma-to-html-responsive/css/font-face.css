@@ -1,0 +1,16 @@
+@font-face {
+    font-family: syne-bold;
+    src: url('../fonts/Syne-Bold.ttf');
+}
+@font-face {
+    font-family: syne-regular;
+    src: url('../fonts/Syne-Regular.ttf');
+}
+@font-face {
+    font-family: satoshi-bold;
+    src: url('../fonts/Satoshi-Bold.otf');
+}
+@font-face {
+    font-family: syne-regular;
+    src: url('../fonts/Satoshi-Regular.otf');
+}

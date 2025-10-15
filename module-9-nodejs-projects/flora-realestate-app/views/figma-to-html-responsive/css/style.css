@@ -1,0 +1,198 @@
+@import url('font-face.css');
+:root
+{
+--bg-primary:#025595;
+--bg-skyblue:#EFF8FF;
+--bg-dark:#16100D;
+--bg-white:#FFFFFF;
+--text-dark:#16100D;
+--text-white:#FFFFFF;
+--text-primary:#025595;
+
+}
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;
+background-color: var(--bg-white);    
+}
+#flora-header{
+width: 100%;
+height: auto;
+background-color: var(--bg-skyblue);    
+top: 0 !important;
+}
+.navbar 
+{
+width: 100%;
+height: auto;    
+}
+.navbar-links
+{
+margin-left: 25%;    
+}
+.navbar-links li 
+{
+display: inline-block;
+padding: 1px 20px;    
+text-decoration: none;
+list-style-type: none;
+color: var(--text-dark);
+}
+.navbar-links a 
+{
+color: var(--text-dark);
+text-decoration: none;
+list-style-type: none;  
+font-size: 18px;
+font-family: satoshi-regular;  
+}
+.active 
+{
+background-color: var(--bg-primary);
+color: var(--text-white) !important;
+margin-left:45%;    
+}
+
+#flora-banner{
+width: 100%;
+height: 650px;
+background: linear-gradient(rgba(0,0,0,0.64),rgba(0,0,0,0.34)),url('../images/banner.png') no-repeat,#EFF8FF;
+background-size: cover;
+background-position: center;
+top: 0 !important;
+position: relative;    
+}
+.banner-text 
+{
+width: 80%;
+height: auto;
+margin: auto;
+position: absolute !important;    
+margin-top: 15%;
+margin-left: 10%;
+color: white !important;
+}
+.banner-text h1 
+{
+font-family: syne-bold;
+font-weight: 100;    
+}
+#flora-banner-page
+{
+width: 100%;
+height: 300px;
+background: linear-gradient(rgba(0,0,0,0.74),rgba(0,0,0,0.54)),url('../images/banner.png') no-repeat,#EFF8FF;
+background-size: cover;
+background-position: center;
+top: 0 !important;
+position: relative;  
+}
+.banner-page-text
+{
+width: 80%;
+height: auto;
+margin: auto;
+position: absolute !important;    
+margin-top: 12%;
+margin-left: 15% !important; 
+color: white !important;  
+}
+.account-bg 
+{
+background-color: var(--bg-primary);    
+}
+#flora-content{
+width: 100%;
+height: auto;
+}
+
+#flora-footer{
+width: 100%;
+height: auto;
+}
+
+@media only screen and (max-width:558px)
+{
+.navbar-links 
+{
+margin-left: 0 !important;    
+}    
+.navbar-links li 
+{
+display:block !important;
+padding: 1px 20px;    
+text-decoration: none;
+list-style-type: none;
+color: var(--text-dark);
+}    
+.active 
+{
+background-color: var(--bg-primary);
+color: var(--text-white) !important;
+margin-left:0% !important;    
+}
+
+
+#flora-banner{
+width: 100%;
+height: 550px;
+background: linear-gradient(rgba(0,0,0,0.64),rgba(0,0,0,0.34)),url('../images/banner.png') no-repeat,#EFF8FF;
+background-size: cover;
+background-position: center;
+top: 0 !important;
+position: relative;    
+}
+.banner-text 
+{
+width: 80%;
+height: auto;
+margin: auto;
+position: absolute !important;    
+margin-top: 35%;
+margin-left: 10%;
+color: white !important;
+}
+.banner-text h1 
+{
+font-family: syne-bold;
+font-weight: 100;    
+}
+#flora-banner-page
+{
+width: 100%;
+height: 300px;
+background: linear-gradient(rgba(0,0,0,0.74),rgba(0,0,0,0.54)),url('../images/banner.png') no-repeat,#EFF8FF;
+background-size: cover;
+background-position: center;
+top: 0 !important;
+position: relative;  
+}
+.banner-page-text
+{
+width: 80%;
+height: auto;
+margin: auto;
+position: absolute !important;    
+margin-top: 30%;
+margin-left: 15% !important; 
+color: white !important;  
+}
+.input-group
+{
+width: 100% !important;
+height: auto !important;    
+}
+.modal-dialog 
+{
+max-width: 90% !important;
+height: auto !important;
+margin: auto;
+}
+.account-bg
+{
+display: none !important;
+}
+}
