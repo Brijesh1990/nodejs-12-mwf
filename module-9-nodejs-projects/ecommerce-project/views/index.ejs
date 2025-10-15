@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Product</title>
+<link rel="stylesheet" href="/css/style.css"> <!-- Add your CSS file if any -->
+</head>
+<body>
+<h1>Manage All Products</h1>
+<h3>Welcome, <%= user.name %>!</h3>
+<a href="/auth/logout" style="font-size: 32px;">Logout</a>
+<div class="products">
+<% products.forEach(product => { %>    
+<div class="products-grid">
+<ul>
+
+<li>
+<h3><%= product.name %></h3>
+<p>Price: $<%= product.price %></p>
+<p><%= product.description %></p>
+</li>
+
+</ul>
+</div>
+<% }) %>
+</div>

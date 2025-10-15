@@ -1,0 +1,118 @@
+/* Example CSS for Add Product page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px !important;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 15px !important;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 2px;
+  }
+  
+  form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #218838;
+  }
+  
+  a {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .products 
+  {
+  width: 80%;
+  height: auto;
+  margin: auto;  
+  display: grid !important;
+  grid-template-columns: auto auto auto;
+  }
+  .products-grid
+  {
+   width: 90%;
+   height: auto;
+   margin: 25px;
+   padding: 10px;
+   background-color: #ccc;
+   color: black;
+
+  }
+  .auth 
+  {
+   width: 80%;
+   height: auto;
+   margin-left: 10% !important;
+   padding: 0px; 
+  }
+  .auth form
+  {
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 25%;
+  }
+
+  .auth input
+  {
+    width: 80%;
+    height: auto;
+    padding: 8px;
+    margin: 5px;
+    
+  }
+  .auth button 
+  {
+    width: 85%;
+    height: auto;
+  }
